@@ -1,0 +1,25 @@
+name: Warps
+version: 1.2
+description: Allows players to warp to common server places.
+author: QHencekl
+main: io.github.qhenckel.warps.Warp
+commands:
+  warp:
+    permission: warp.warp
+    usage: /warp [warp name]
+  setwarp:
+    permission: warp.set
+    usage: /setwarp [warp name]
+  delwarp:
+    permission: warp.delete
+    usage: /delwarp [warp name]
+permissions:
+  warp.warp:
+    description: Warp to any warp.
+    default: true
+  warp.set:
+    description: Create a warp.
+    default: op
+  warp.del:
+    description: Delete any warp.
+    default: op
